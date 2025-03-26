@@ -1,0 +1,21 @@
+version: '3.8'
+
+networks:
+  wp_net:
+    name: wp_net
+    driver: bridge
+    external: false
+      
+
+
+
+volumes:
+  wp-data:
+    name: wp-data
+    driver: local
+  db-data:
+    name: db-data
+    driver: local
+
+# services:
+  
